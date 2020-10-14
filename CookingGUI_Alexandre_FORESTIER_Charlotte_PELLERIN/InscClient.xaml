@@ -1,0 +1,27 @@
+﻿<Window x:Class="CookingGUI_Alexandre_FORESTIER_Charlotte_PELLERIN.InscClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CookingGUI_Alexandre_FORESTIER_Charlotte_PELLERIN"
+        mc:Ignorable="d"
+        Title="InscClient" Height="250" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Width="150" Height="20" Grid.Row="0" Text="Merci d'entrer vos données" TextAlignment="Center" Grid.ColumnSpan="2" Margin="22,4.333,21.334,4.333"/>
+        <TextBox x:Name="nom" Width="150" Height="20" Grid.Row="1" Text="Nom" TextAlignment="Center" Margin="22,4.333,21.334,4.333"/>
+        <TextBox x:Name="prenom" Width="150" Height="20" Grid.Row="2" Text="Prenom" TextAlignment="Center" Margin="22,3.667,21.334,4.333"/>
+        <TextBox x:Name="tel" Width="150" Height="20" Grid.Row="3" Text="Téléphone" TextAlignment="Center" Margin="22,4.667,21.334,4"/>
+        <TextBox x:Name="mdp" Text ="Mot de passe" Width="150" Height="20" Grid.Row="4" TextAlignment="Center" Margin="22,4.333,21.334,4.333"/>
+        <Button Width="100" Height="20" Grid.Row="5" Content="Valider"  Margin="22,4.333,21.334,4.333" Click="Button_Click"/>
+        <TextBlock x:Name="ErrBox" Width="150" Height="20" Grid.Row="6" Text="" TextAlignment="Center" Grid.ColumnSpan="2" Margin="22,4.333,21.334,4.333"/>
+    </Grid>
+</Window>

@@ -1,0 +1,67 @@
+﻿<Window x:Class="CookingGUI_Alexandre_FORESTIER_Charlotte_PELLERIN.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CookingGUI_Alexandre_FORESTIER_Charlotte_PELLERIN"
+        mc:Ignorable="d"
+        Title="Admin" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+        <TabControl  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Margin="10,10,10,10">
+            <TabItem  Header="Dashboard">
+                <Grid x:Name="dashboard" Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Gestion Produits">
+                <Grid x:Name="GesProdGrid" Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Gestion Recettes">
+                <Grid x:Name="GesRecGrid" Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Gestion Cdr">
+                <Grid x:Name="cdrGrid" Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Grid x:Name="subgrid" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Administrateur" HorizontalAlignment="Left" VerticalAlignment="Center" FontStyle="Italic" FontWeight="Bold" FontSize="30" />
+            <TextBlock x:Name="nom" Text="Nom : " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" FontSize="20"/>
+            <TextBlock x:Name="idText" Text="Identifiant : " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="2" FontSize="20"/>
+        </Grid>
+    </Grid>
+</Window>
